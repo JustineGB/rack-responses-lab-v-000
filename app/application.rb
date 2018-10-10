@@ -3,7 +3,7 @@ class Application
   def call(env)
     resp = Rack::Response.new
 
-    time = Time.new
+    time = Time.local
     puts "Current Time : " + time.inspect
 
     resp.write "#{time.local}\n"
