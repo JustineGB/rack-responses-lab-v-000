@@ -2,11 +2,10 @@ class Application
 
   def call(env)
     resp = Rack::Response.new
-    binding.pry
-      time = Time.new
 
-
-
+    env[:timestamp] = Time.now
+    time = self.call(env)
+    resp.write #{time}
 
         #if before noon:
         #  resp.write "Good Morning!"
