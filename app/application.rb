@@ -10,11 +10,11 @@ class Application
     puts Time.local(values)
     resp.write "#{Time.local(values)}\n"
 
-    if time.hour < 11
-      resp.write "Good Morning!"
-    else time.hour > 12
-      resp.write "Good Afternoon!"
-    end
+    #if time.hour < 11
+    #  resp.write "Good Morning!"
+    #else time.hour > 12
+    #  resp.write "Good Afternoon!"
+  #  end
 
     resp.finish
   end
