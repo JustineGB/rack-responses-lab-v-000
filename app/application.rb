@@ -8,11 +8,11 @@ class Application
 
     resp.write "#{time.hour}\n"
 
-    if time1 < 12:00:00
-      resp.write "Good Morning!"
-    else
-      resp.write "Good Afternoon!"
-    end
+    #if time1 < 12:00:00
+    #  resp.write "Good Morning!"
+    #else
+    #  resp.write "Good Afternoon!"
+    #end
 
     resp.finish
   end
