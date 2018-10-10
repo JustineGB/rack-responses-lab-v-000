@@ -5,7 +5,7 @@ class Application
 
     time = Time.new
     values = time.to_a
-    #puts "Current Time : " + time.inspect
+    puts "Current Time : " + time.inspect
     #resp.write "Time.local(*values)" #{}"#{time}\n"
     puts Time.local(*values)
     #if time.hour < 11
