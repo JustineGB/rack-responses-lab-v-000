@@ -5,10 +5,10 @@ class Application
 
     time = Time.new
     values = time.to_a
-    #puts "Current Time : " + time.inspect
+    puts "Current Time : " + time.inspect
     #resp.write "Time.local(*values)" #{}"#{time}\n"
     puts Time.local(values)
-    resp.write "#{Time.local(values)}\n"
+    #resp.write "#{Time.local(values)}\n"
 
     #if time.hour < 11
     #  resp.write "Good Morning!"
