@@ -2,8 +2,11 @@ class Application
 
   def call(env)
     resp = Rack::Response.new
-
+      time = Time.now
       
+
+
+
         #if before noon:
         #  resp.write "Good Morning!"
         #else
