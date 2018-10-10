@@ -6,13 +6,13 @@ class Application
     time = Time.new
     puts "Current Time : " + time.inspect
 
-    #resp.write "#{time.hour}\n"
+    resp.write "#{time.hour}\n"
 
-    if time.hour < 11
-      resp.write "Good Morning!"
-    else time.hour > 12
-      resp.write "Good Afternoon!"
-    end
+    #if time.hour < 11
+    #  resp.write "Good Morning!"
+    #else time.hour > 12
+    #  resp.write "Good Afternoon!"
+    #end
 
     resp.finish
   end
