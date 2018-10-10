@@ -3,9 +3,10 @@ class Application
   def call(env)
     resp = Rack::Response.new
 
-    env[:timestamp] = Time.now
-    time = self.call(env)
-    resp.write #{time}
+    time1 = Time.new
+    puts "Current Time : " + time1.inspect
+
+    resp.write "#{time1}\n"
 
         #if before noon:
         #  resp.write "Good Morning!"
