@@ -4,9 +4,9 @@ class Application
     resp = Rack::Response.new
 
     time = Time.new
-    puts "Current Time : " + time.inspect
-
-    resp.write "#{time}\n"
+    values = time.to_a
+    #puts "Current Time : " + time.inspect
+    resp.write "Time.local(*values)" #{}"#{time}\n"
 
     #if time.hour < 11
     #  resp.write "Good Morning!"
