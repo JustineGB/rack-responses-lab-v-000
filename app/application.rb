@@ -4,7 +4,7 @@ class Application
     resp = Rack::Response.new
 
     time = Time.new
-    puts "Current Time : " + time1.inspect
+    puts "Current Time : " + time.inspect
 
     resp.write "#{time.hour}\n"
 
